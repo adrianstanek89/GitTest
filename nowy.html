@@ -1,0 +1,122 @@
+<script>
+    /*  var i = 999999999999;
+                                    for (let i = 0; i < 10; i++) {
+                                        console.log(i);
+                                    }
+                                    console.log(i);
+
+                                    if (true) {
+                                        let i = 88888888;
+                                        console.log(i)
+                                    }
+
+                                    
+                                   
+                                    
+                                    
+                                    const z = 1;
+                                    console.log(z);
+                                    
+                                    z=2
+                                    
+                                    console.log(z);
+                                    
+                                    const y = {y: 10}
+                                    console.log (y.y);
+                                    y.y=1
+                                    y.m=1 /* {y:10, m:1} 
+                                    console.log(y);
+                                    
+                                    
+                                    */
+
+    /* 
+   
+   var cat = {
+        rasa: 'dachowiec'
+    };
+    var myCat = {
+        imie: "programista"
+    };
+    var test = {
+        test: "test"
+    };
+myCat dziedziczt z cat
+    Object.setPrototypeOf(myCat, cat);
+    console.dir(myCat);
+    console.log(myCat.imie);
+    console.log(myCat.rasa);
+    */
+
+
+    /*
+    function Dog(){
+        
+        
+    }
+    
+    Dog.prototype.rasa = "Buldog";
+    
+    var mojPies = new Dog();
+    console.log(mojPies.rasa);
+    mojPies.szczeka = "Hau";
+    
+    */
+
+
+    function Player(name, hitpoints) {
+        this.name = name;
+        this.hitpoints = hitpoints;
+        this.attack = function attack(opponent) {
+            opponent.hitpoints -= 10;
+            return opponent.name + " ma jeszcze" + opponent.hitpoints;
+        }
+    }
+    var p1 = new Player("conan", 100);
+    var p2 = new Player("hercules", 200);
+    var p3 = new Player("doctor", 50);
+
+    p3.heal = function heal(targetPlayer) {
+        targetPlayer.hitpoints += 20;
+    }
+
+    var boss = new Player('JavaScript', 500);
+
+    function jebnij() {
+        let basem = randomNumber(1, 5);
+
+        switch (basem) {
+            case 1:
+                return p1.attack(boss);
+                break;
+            case 2:
+                return p2.attack(boss);
+                break;
+
+            case 3:
+                return p3.heal(p1);
+                break;
+            case 4:
+                return p3.heal(p2);
+                break;
+            case 5:
+                return boss.attack(p1);
+                break;
+            case 6:
+                return boss.attack(p2);
+                break;
+        }
+    }
+
+</script>
+
+
+
+
+
+
+
+
+
+
+const /* trzyma liczby nie mozna zmienic, moze przechowywac dane */ var /* glob*/ let /*lok, nie nadpisuje wczesniej po cons log tak*/
