@@ -1,0 +1,26 @@
+$background-color: green;
+body{
+        background-color:$background-color;
+    }
+}
+.box {
+	max-width: 1200px;
+	width: 100%;
+	margin: 0 auto;
+	display: table;
+}
+
+.box div {
+	display: table-cell;
+	width: 50%;
+}
+
+ul li {
+	display: inline-block;
+}
+.box{
+    div{
+        display:table-cell;
+        width:50;
+    }
+}
