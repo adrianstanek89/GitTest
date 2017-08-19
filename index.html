@@ -1,0 +1,30 @@
+﻿<!DOCTYPE html>
+<html>
+
+<head>
+    <title>HTML Application</title>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0"> //
+    <script type="text/javascript" src="script.js"></script>//
+</head>
+
+<body>
+    <div>HTML Content</div>
+    <script type="text/javascript">
+        // document.write('JS Content');
+
+
+        function silnia(n) {
+            if (n == 1) {
+                return 1;
+            } else {
+                return n * silnia(n - 1)
+            }
+        }
+
+        console.log(silnia(1), silnia(5), silnia(7), silnia(9));
+
+    </script>
+</body>
+
+</html>
